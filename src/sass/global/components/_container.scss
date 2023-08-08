@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: $max-width;
+  padding: 0 16px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  &-min {
+    max-width: 822;
+  }
+}
+

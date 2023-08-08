@@ -1,0 +1,33 @@
+$font-family-main: Proxima,
+san-serif;
+$font-family-title: 'Frozen', sans-serif;
+//SIZE
+$font-size-main: 18px;
+$font-size-h1: 40px;
+$font-size-h2: 48px;
+//COLORS
+$black: #000;
+$white: #fff;
+$yellow: #F4FF5C;
+$pink: #E4305F;
+
+//yellowBtn
+$yellowBtnBrTop: #FFF494;
+$yellowBtnBrBottom: #F4B000;
+$yellowBtnBack: #FFE600;
+$yellowBtnBrTopHover: #FFFFAD;
+$yellowBtnBrBottomHover: #FFD30F;
+$yellowBtnBackHover: #FFFF2E;
+
+
+//blueBtn
+$blueBtnBrTop: #1FBCFF;
+$blueBtnBrBottom: #12729B;
+$blueBtnBack: #1896CC;
+$blueBtnBrTopHover: #4DBBFF;
+$blueBtnBrBottomHover: #1782C4;
+$blueBtnBackHover: #2D9FE6;
+
+$breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
+//width container
+$max-width: 1200px;

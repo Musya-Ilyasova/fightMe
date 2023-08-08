@@ -1,0 +1,17 @@
+.header {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  &__container {
+    justify-content: center;
+  }
+}
+
+.logo {
+  display: block;
+  font-size: 0;
+  height: 100%;
+}
+
