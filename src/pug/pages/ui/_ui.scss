@@ -1,7 +1,10 @@
 .ui {
   background: $pink;
   section {
-    padding: 120px 0 40px;
+    padding: 40px 0 40px;
+    &:first-child {
+      padding-top: 120px;
+    }
   }
   h1, h2 {
     text-align: center;
@@ -15,6 +18,13 @@
         margin: 0 5px 20px 5px;
       }
     }
+    .list {
+      margin: 0 5px 20px 5px;
+    }
   }
+}
+
+.sliders {
+  overflow: hidden;
 }
 

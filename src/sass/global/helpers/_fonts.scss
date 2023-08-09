@@ -8,6 +8,14 @@
 
 @include font-face(
   "Proxima",
+  "../fonts/ProximaNovaCond-Semibold",
+  600,
+  normal,
+  woff woff2
+);
+
+@include font-face(
+  "Proxima",
   "../fonts/proxima-nova-condensed-bold",
   700,
   normal,

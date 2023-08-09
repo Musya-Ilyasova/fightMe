@@ -19,8 +19,8 @@ html {
 body {
   font-family: $font-family-main;
   font-size: $font-size-main;
-  line-height: 1.2;
-  font-weight: 400;
+  line-height: 1.4;
+  font-weight: 700;
   color: $black;
   //Flexbox
   display: flex;
@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   overflow-anchor: auto;
   scroll-behavior: smooth;
-  text-rendering: auto; 
+  text-rendering: auto;
 
   /*&::-webkit-scrollbar {
     background-color: $gray-dark;
@@ -101,7 +101,7 @@ button {
   background-color: #e4f1fd;
 }
 
-// media for users with vestibular disorders 
+// media for users with vestibular disorders
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -109,4 +109,4 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-} 
+}

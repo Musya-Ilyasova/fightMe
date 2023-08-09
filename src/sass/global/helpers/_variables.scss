@@ -10,6 +10,10 @@ $black: #000;
 $white: #fff;
 $yellow: #F4FF5C;
 $pink: #E4305F;
+$blue: #0072E8;
+$blueLight: #1896CC;
+$violet: #8B45F5;
+$green: #18CC60;
 
 //yellowBtn
 $yellowBtnBrTop: #FFF494;
@@ -28,6 +32,6 @@ $blueBtnBrTopHover: #4DBBFF;
 $blueBtnBrBottomHover: #1782C4;
 $blueBtnBackHover: #2D9FE6;
 
-$breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
+$breakpoints: ("320": 320px, "768": 768px, "920": 920px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
 //width container
 $max-width: 1200px;

@@ -1,9 +1,17 @@
 .modal__overlay(data-modal="2")
-  .modal
-    +icon("modal-back")
+  .modal.modal_timer
+    img.modal-back(src="./img/modal-timer-back.svg", alt="")
+    .modal__timer
+      +icon('modal-timer')
+      .timer
+        span.hour 23
+        | :
+        span.min 59
+        | :
+        span.sec 32
     .modal__container
-      h3.modal__title How to get prize?
-      p.modal__text Write to our administrator Denis in Discord. He will ask for the wallet that you specified at the beginning. Within 3 days we will issue Alpha Fighter status to this wallet.
+      h3.modal__title Get x3 tickets
+      p.modal__text for each friend you invite in next 24 hours you will get 3 tickets, not 1
     button.modal__close Close
       +icon('close')
       +icon('close-back')

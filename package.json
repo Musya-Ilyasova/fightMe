@@ -57,6 +57,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "keen-slider": "^6.8.6",
     "svg4everybody": "^2.1.9"
   }
 }

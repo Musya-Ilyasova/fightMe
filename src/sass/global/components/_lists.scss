@@ -1,0 +1,61 @@
+.list {
+  color: $white;
+  counter-reset: item;
+  &__item {
+    display: flex;
+    margin-bottom: 10px;
+    counter-increment: item;
+  }
+  &__count {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: relative;
+    text-align: center;
+    clip-path: path("M1.93224 2.91019L30.9375 0L32 28.6866V28.7892L0 31.9998V31.8938L1.93224 2.91019Z");
+    background: $green;
+    &:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.24);
+      clip-path: path("M1.93224 2.91019L30.9375 0L32 28.6866V28.7892L0 31.9998V31.8938L1.93224 2.91019Z");
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &:after {
+      content: counter(item);
+      font-family: $font-family-title;
+      font-size: 24px;
+      text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.24);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      line-height: 32px;
+      clip-path: path("M1.93224 2.91019L30.9375 0L32 28.6866V28.7892L0 31.9998V31.8938L1.93224 2.91019Z");
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .icon {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      z-index: 1;
+      left: 2px;
+      top: 2px;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    margin-left: 12px;
+  }
+  &_blue {
+    .list__count {
+      background: $blueLight;
+    }
+
+  }
+}

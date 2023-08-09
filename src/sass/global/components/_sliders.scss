@@ -1,0 +1,109 @@
+.slider {
+  &:not([data-keen-slider-disabled]) {
+    overflow: visible;
+    padding: 25px 16px;
+    z-index: 2;
+    @include mq('920') {
+      overflow: hidden;
+      padding: 25px 20px;
+      padding-right: 0;
+    }
+  }
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+    @include mq('920') {
+      background: url(../img/slider-bg.svg) no-repeat;
+      background-size: contain;
+      margin: 0 auto;
+      max-width: 790px;
+      height: 242px;
+      overflow: visible;
+      width: 100%;
+      // padding: 25px 20px;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 60px);
+    left: -30px;
+    display: none;
+    @include mq('920') {
+      display: flex;
+    }
+  }
+  &__arrow {
+    font-size: 0;
+    filter: drop-shadow(-4px 6px 0px rgba(0, 0, 0, 0.24));
+    width: 60px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    pointer-events: all;
+    .icon-arrow-back {
+      position: absolute;
+      top: 0;
+      right: 3px;
+    }
+    .icon-arrow {
+      width: 32px;
+      height: 32px;
+      position: relative;
+      z-index: 2;
+    }
+    &.slider__left {
+      .icon-arrow-back {
+        right: 0;
+      }
+      .icon-arrow {
+        transform: rotate(180deg);
+      }
+    }
+    &_disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+.slider-item {
+  padding: 12px 15px;
+  min-width: 140px;
+  max-width: 140px;
+  box-sizing: border-box;
+  .icon-slider-item-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 201px;
+  }
+  &__img {
+    height: 110px;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+  }
+  &__text {
+    color: $white;
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.2;
+  }
+}
