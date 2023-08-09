@@ -21,8 +21,24 @@
   color: white;
   margin-top: 40px;
   &__item {
-    width: 150px;
+    width: 159px;
     margin-bottom: 40px;
+    &_big {
+      width: 100%;
+      .tickets-sc-list__img {
+        height: auto;
+      }
+      @include mq("768") {
+        order: 2;
+      }
+    }
+  }
+  &__img {
+    width: 144px;
+    max-height: 132px;
+    object-fit: contain;
+    object-position: left;
+    margin-bottom: 17px;
   }
 
 }
