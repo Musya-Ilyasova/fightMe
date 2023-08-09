@@ -13,18 +13,38 @@
   }
   .container {
     justify-content: center;
-    .btn {
-      &__wrapper {
-        margin: 0 5px 20px 5px;
-      }
-    }
-    .list {
+  }
+}
+
+.lists {
+  .list {
+    margin: 0 5px 20px 5px;
+  }
+}
+.buttons, .popups {
+  .btn {
+    &__wrapper {
       margin: 0 5px 20px 5px;
     }
   }
+
 }
 
 .sliders {
   overflow: hidden;
 }
 
+.banners {
+  .bannerinv {
+    margin: 0 5px 20px 5px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+.inputs {
+  .input__wrapper {
+    margin: 0 5px 20px 5px;
+  }
+}

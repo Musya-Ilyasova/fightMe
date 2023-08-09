@@ -142,6 +142,70 @@ section.sliders
             img.slider-item__img(srcset="./img/party2x.png 2x" src="./img/party.png", alt="Invitation to a party in honor of the release of the game", loading="lazy", width="113", height="52")
           span.slider-item__text Invitation to a release party
 section.banners
+  .container.container-min
+    h2 Banners
+    .bannerinv
+      .bannerinv__container
+        h3.bannerinv__title INVITE FRIENDS TO GET MORE TICKETS
+        ul.list.list_blue.bannerinv__list
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text Share your personal link
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text Your friend fulfills conditions
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text You and your friend both get ticket
+        .bannerinv-link Your Fighter link
+          span.bannerinv-link__url#copy-content(data-text="fight.me/ref/ajai120") FIGHT.ME/REF/AJAI120
+          .btn__wrapper#copy-btn.bannerinv__btn
+            button.btn.btn_primary
+              +icon('btn-back')
+              +icon('btn-br')
+              +icon('btn-br-top')
+              +icon('btn-br-bottom')
+              span.btn__text Copy link
+        ul.bannerinv-socList
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") facebook
+              +icon("facebook")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") telegram
+              +icon("telegram")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") twitter
+              +icon("twitter")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") discord
+              +icon("discordb")
+    .bunnertimer
+      .bunnertimer__timer
+        .timer
+          span.hour 23
+          | :
+          span.min 59
+          | :
+          span.sec 32
+      .bunnertimer__container
+        h3.bunnertimer__title Get x3 tickets
+        p.bunnertimer__text for each friend you invite in next 24 hours you will get 3 tickets, not 1
+section.inputs
+  .container
+    h2 Input
+    .input__wrapper
+      textarea#wallet(name="wallet", placeholder="x0…" value="0x34067b06592E0EbbcAD1a5BbBe94e9b1Af7ffF57").input
+      span.input__mgs
+        +icon('warn')
+        | Try connecting the discord again
+    .input__wrapper
+      textarea#wallet(name="wallet", placeholder="x0…" value="0x34067b06592E0EbbcAD1a5BbBe94e9b1Af7ffF57").input.input_error
+      span.input__mgs
+        +icon('warn')
+        | Try connecting the discord again
 
 
 

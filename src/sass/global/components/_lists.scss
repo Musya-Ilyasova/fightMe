@@ -51,10 +51,14 @@
   &__text {
     font-weight: 600;
     margin-left: 12px;
+    line-height: 32px;
   }
   &_blue {
     .list__count {
       background: $blueLight;
+    }
+    .list__item {
+      margin-bottom: 3px;
     }
 
   }

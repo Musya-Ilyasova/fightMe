@@ -1,0 +1,28 @@
+.tickets-sc {
+  background: $black;
+  position: relative;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 80px;
+    background: $black;
+    clip-path: path("M-304 315H-234.459V1228.65L137.745 1147.99L132 1188L665 1096.71V879.845L584.751 879.542V-24.4746L221.514 54.7546L229 2L-304 96.0328V315Z");
+    top: -80px;
+    position: absolute;
+    left: 0;
+
+  }
+}
+
+.tickets-sc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  margin-top: 40px;
+  &__item {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+
+}

@@ -1,1 +1,20 @@
-//
+//fr-screen
+.fr-screen {
+  padding: 90px 0 140px;
+  background-image: url(../img/bg/first-sc-bg2x-320.jpg);
+  background-image: image-set(
+    url(../img/bg/first-sc-bg-320.webp) 1x type('image/webp'),
+    url(../img/bg/first-sc-bg2x-320.webp) 2x type('image/webp'));
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__title {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    margin-top: 40px;
+  }
+}

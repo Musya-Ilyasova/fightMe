@@ -1,1 +1,30 @@
 //first-screen
+section.fr-screen
+  .container
+    picture
+      source(srcset="./img/first-sc.webp, ./img/first-sc2x.webp 2x" type="image/webp")
+      img.fr-screen__img(srcset="./img/first-sc2x.png 2x" src="./img/first-sc.png", alt="Invite your Friends and get rewards", loading="lazy", width="585", height="438")
+    h1.fr-screen__title Invite your Friends and get rewards
+    ul.list
+      li.list__item
+        span.list__count
+          +icon("list-bg")
+        span.list__text Log In via Discord
+      li.list__item
+        span.list__count
+          +icon("list-bg")
+        span.list__text Enter your Polygon Wallet
+      li.list__item
+        span.list__count
+          +icon("list-bg")
+        span.list__text Get your slider!
+    .btn__wrapper.fr-screen__btn
+      button.btn.btn_primary
+        +icon('btn-back')
+        +icon('btn-br')
+        +icon('btn-br-top')
+        +icon('btn-br-bottom')
+        span.btn__text Log In via Discord
+
+
+

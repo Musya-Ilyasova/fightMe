@@ -14,7 +14,8 @@ $blue: #0072E8;
 $blueLight: #1896CC;
 $violet: #8B45F5;
 $green: #18CC60;
-
+$error: #FF4D00;
+$errorMsg: #4CFDE8;
 //yellowBtn
 $yellowBtnBrTop: #FFF494;
 $yellowBtnBrBottom: #F4B000;
@@ -23,7 +24,6 @@ $yellowBtnBrTopHover: #FFFFAD;
 $yellowBtnBrBottomHover: #FFD30F;
 $yellowBtnBackHover: #FFFF2E;
 
-
 //blueBtn
 $blueBtnBrTop: #1FBCFF;
 $blueBtnBrBottom: #12729B;
@@ -31,6 +31,10 @@ $blueBtnBack: #1896CC;
 $blueBtnBrTopHover: #4DBBFF;
 $blueBtnBrBottomHover: #1782C4;
 $blueBtnBackHover: #2D9FE6;
+
+//soc
+$socBack: #FFE600;
+$socBackHover: #F4FF5C;
 
 $breakpoints: ("320": 320px, "768": 768px, "920": 920px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
 //width container
