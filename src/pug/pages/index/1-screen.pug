@@ -1,28 +1,29 @@
 //first-screen
 section.fr-screen
-  .container
+  .container.fr-screen__container
     img.fr-screen__img(srcset="./img/first-sc2x.webp 2x" src="./img/first-sc.webp", alt="Invite your Friends and get rewards", loading="lazy", width="585", height="438", type="image/webp")
-    h1.fr-screen__title Invite your Friends and get rewards
-    ul.list
-      li.list__item
-        span.list__count
-          +icon("list-bg")
-        span.list__text Log In via Discord
-      li.list__item
-        span.list__count
-          +icon("list-bg")
-        span.list__text Enter your Polygon Wallet
-      li.list__item
-        span.list__count
-          +icon("list-bg")
-        span.list__text Get your slider!
-    .btn__wrapper.fr-screen__btn
-      button.btn.btn_primary
-        +icon('btn-back')
-        +icon('btn-br')
-        +icon('btn-br-top')
-        +icon('btn-br-bottom')
-        span.btn__text Log In via Discord
+    .fr-screen__content
+      h1.fr-screen__title Invite your Friends and get rewards
+      ul.list
+        li.list__item
+          span.list__count
+            +icon("list-bg")
+          span.list__text Log In via Discord
+        li.list__item
+          span.list__count
+            +icon("list-bg")
+          span.list__text Enter your Polygon Wallet
+        li.list__item
+          span.list__count
+            +icon("list-bg")
+          span.list__text Get your slider!
+      .btn__wrapper.fr-screen__btn
+        button.btn.btn_primary
+          +icon('btn-back')
+          +icon('btn-br')
+          +icon('btn-br-top')
+          +icon('btn-br-bottom')
+          span.btn__text Log In via Discord
 
 
 

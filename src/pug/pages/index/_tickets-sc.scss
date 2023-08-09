@@ -1,6 +1,9 @@
 .tickets-sc {
   background: $black;
   position: relative;
+  @include mq('768') {
+    padding-bottom: 22px;
+  }
   &:before {
     content: "";
     width: 100%;
@@ -10,7 +13,17 @@
     top: -80px;
     position: absolute;
     left: 0;
+    @include mq('768') {
+      clip-path: path("M0 40.2569L1168 0L1130.22 52.0061L1440 29V666.786V672.75V759.13L273 798L303.564 756.602L0 779V135.944L26.1818 134H0V40.2569Z");
+      height: 111px;
+      top: -110px;
+    }
+    @include mq('1024') {
+      clip-path: path("M0 40.2569L1168 0L1130.22 52.0061L1440 29V666.786V672.75V759.13L273 798L303.564 756.602L0 779V135.944L26.1818 134H0V40.2569Z");
+      height: 134px;
+      top: -133px;
 
+    }
   }
 }
 
@@ -27,6 +40,9 @@
       width: 100%;
       .tickets-sc-list__img {
         height: auto;
+        @include mq("768") {
+          width: 215px;
+        }
       }
       @include mq("768") {
         order: 2;
@@ -39,6 +55,9 @@
     object-fit: contain;
     object-position: left;
     margin-bottom: 17px;
+    @include mq("768") {
+      width: 150px;
+    }
   }
 
 }

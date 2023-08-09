@@ -7,6 +7,19 @@
     url(../img/bg/first-sc-bg2x-320.webp) 2x type('image/webp'));
   background-repeat: no-repeat;
   background-size: cover;
+  @include mq('768') {
+    padding: 120px 0 160px;
+    background-image: url(../img/bg/first-sc-bg2x-768.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-bg-768.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-bg2x-768.webp) 2x type('image/webp'));
+  }
+  @include mq('1024') {
+    background-image: url(../img/bg/first-sc-bg2x.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-bg.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-bg2x.webp) 2x type('image/webp'));
+  }
   &__img {
     width: 100%;
     height: auto;
@@ -18,5 +31,19 @@
   }
   &__btn {
     margin-top: 40px;
+  }
+  &__container {
+    @include mq('768') {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 30px;
+      align-items: center;
+    }
+    @include mq('1024') {
+      grid-template-columns: 1fr 380px;
+
+
+    }
   }
 }
