@@ -1,0 +1,116 @@
+//add-wallet
+.auth-page {
+  background: #090520;
+}
+.add-wallet {
+  padding: 123px 0 120px;
+  background-image: url(../img/bg/first-sc-input-bg2x-320.webp);
+  background-image: image-set(
+    url(../img/bg/first-sc-input-bg-320.webp) 1x type('image/webp'),
+    url(../img/bg/first-sc-input-bg2x-320.webp) 2x type('image/webp'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  @include mq('768') {
+    padding: 120px 0 160px;
+    background-image: url(../img/bg/first-sc-input-bg2x-768.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-input-bg-768.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-input-bg2x-768.webp) 2x type('image/webp'));
+  }
+  @include mq('1024') {
+    background-image: url(../img/bg/first-sc-input-bg2x.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-input-bg.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-input-bg2x.webp) 2x type('image/webp'));
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__title {
+    margin-top: 14px;
+    margin-bottom: 16px;
+    @include mq('768') {
+      margin-bottom: 32px;
+    }
+  }
+  &__btn {
+    margin-top: 5px;
+  }
+  &__container {
+    max-width: 375px;
+    @include mq('768') {
+      display: grid;
+      grid-template-columns: 349px 349px;
+      grid-template-rows: auto;
+      grid-column-gap: 30px;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+    }
+    @include mq('1024') {
+      grid-template-columns: 380px 380px;
+    }
+  }
+  &__content {
+    margin-top: 60px;
+    position: relative;
+    @include mq('768') {
+      margin-top: 0;
+    }
+
+  }
+}
+
+.add-wallet-img {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  @include mq('768') {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__back {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    left: -75%;
+    width: 685px;
+    height: 456px;
+    max-width: none;
+    @include mq('768') {
+      left: -60%;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      width: 799px;
+      height: 531px;
+
+    }
+  }
+  &__ticket {
+    position: relative;
+    @include mq('768') {
+      display: block;
+      height: 141px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__title {
+    position: relative;
+    max-width: 212px;
+    @include mq('768') {
+      font-size: 34px;
+      max-width: 349px;
+      text-shadow: -1.3px 2.6px 0px rgba(0, 0, 0, 0.24);
+      margin-top: 20px;
+
+    }
+  }
+}

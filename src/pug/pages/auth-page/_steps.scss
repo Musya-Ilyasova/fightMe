@@ -1,0 +1,52 @@
+.steps {
+  padding: 80px 0 116px;
+  background-image: url(../img/bg/how-create-sc-bg2x-320.webp);
+  background-image: image-set(
+    url(../img/bg/how-create-sc-bg-320.webp) 1x type('image/webp'),
+    url(../img/bg/how-create-sc-bg2x-320.webp) 2x type('image/webp'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+  position: relative;
+  z-index: 3;
+  margin-top: -66px;
+  @include mq('768') {
+    margin-top: -124px;
+    padding: 200px 0 160px;
+    background-image: url(../img/bg/how-create-sc-bg2x-768.webp);
+    background-image: image-set(
+      url(../img/bg/how-create-sc-bg-768.webp) 1x type('image/webp'),
+      url(../img/bg/how-create-sc-bg2x-768.webp) 2x type('image/webp'));
+      background-position: top;
+  }
+  @include mq('1024') {
+    margin-top: -120px;
+    padding: 200px 0 285px;
+    background-image: url(../img/bg/how-create-sc-bg2x.webp);
+    background-image: image-set(
+      url(../img/bg/how-create-sc-bg.webp) 1x type('image/webp'),
+      url(../img/bg/how-create-sc-bg2x.webp) 2x type('image/webp'));
+  }
+  &__title {
+    margin-bottom: 24px;
+    @include mq('768') {
+      margin-right: 30px;
+      width: 349px;
+    }
+    @include mq('1024') {
+      width: 380px;
+    }
+  }
+  &__list {
+    .list__item {
+      margin-bottom: 5px;
+    }
+  }
+  &__container {
+    @include mq('768') {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+}

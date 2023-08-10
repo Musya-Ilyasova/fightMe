@@ -1,6 +1,7 @@
 .tickets-sc {
-  background: $black;
+  background: #090520;
   position: relative;
+  z-index: 5;
   @include mq('768') {
     padding-bottom: 22px;
   }
@@ -8,7 +9,7 @@
     content: "";
     width: 100%;
     height: 80px;
-    background: $black;
+    background: #090520;
     clip-path: path("M-304 315H-234.459V1228.65L137.745 1147.99L132 1188L665 1096.71V879.845L584.751 879.542V-24.4746L221.514 54.7546L229 2L-304 96.0328V315Z");
     top: -80px;
     position: absolute;
@@ -19,8 +20,10 @@
       top: -110px;
     }
     @include mq('1024') {
-      clip-path: path("M0 40.2569L1168 0L1130.22 52.0061L1440 29V666.786V672.75V759.13L273 798L303.564 756.602L0 779V135.944L26.1818 134H0V40.2569Z");
-      height: 134px;
+      clip-path: none;
+      background: url("../img/bg/tickets-sc-bg.svg") no-repeat;
+      background-size: cover;
+      height: calc(100% + 134px);
       top: -133px;
 
     }
@@ -36,8 +39,10 @@
   &__item {
     width: 159px;
     margin-bottom: 40px;
+    max-width: 48%;
     &_big {
       width: 100%;
+      max-width: 100%;
       .tickets-sc-list__img {
         height: auto;
         @include mq("768") {

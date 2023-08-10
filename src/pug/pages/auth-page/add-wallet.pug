@@ -1,0 +1,27 @@
+//add-wallet
+section.add-wallet
+  .container.add-wallet__container
+    .add-wallet__img.add-wallet-img
+      img.add-wallet-img__back(src="./img/add-wallet-ticked-back.svg", alt="")
+      img.add-wallet-img__ticket(src="./img/add-wallet-ticked.svg", alt="")
+      span.title.add-wallet-img__title Wow! You've got
+        br
+        | a welcome ticket!
+    .add-wallet__content
+      span.subtitle.add-wallet__subtitle ONE STEP LEFT!
+      h1.add-wallet__title Enter your Polygon WALLET
+      .input__wrapper
+        textarea#wallet(name="wallet", placeholder="x0…" value="0x34067b06592E0EbbcAD1a5BbBe94e9b1Af7ffF57").input
+        span.input__mgs
+          +icon('warn')
+          | Try connecting the discord again
+      .btn__wrapper.add-wallet__btn
+        a.btn.btn_primary(href="https://discord.gg/fight-me-club")
+          +icon('btn-back')
+          +icon('btn-br')
+          +icon('btn-br-top')
+          +icon('btn-br-bottom')
+          span.btn__text Go NEXT
+
+
+

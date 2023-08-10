@@ -25,15 +25,16 @@
     color: $error;
     & + .input__mgs {
       opacity: 1;
+      display: flex;
     }
   }
   &__mgs {
     opacity: 0;
     color: $errorMsg;
     font-size: 16px;
-    display: flex;
     align-items: center;
     padding: 5px 0;
+    display: none;
     .icon {
       width: 24px;
       height: 24px;
@@ -43,6 +44,7 @@
   }
   &__wrapper {
     height: auto;
+    max-width: 320px;
   }
 
 }

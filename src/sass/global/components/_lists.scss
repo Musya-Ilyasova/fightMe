@@ -52,6 +52,7 @@
     font-weight: 600;
     margin-left: 12px;
     line-height: 32px;
+    width: calc(100% - 12px - 32px);
   }
   &_blue {
     .list__count {

@@ -1,0 +1,14 @@
+include ../mixins/mixins
+doctype html
+html(lang="ru")
+  include ../components/global/head
+  body.auth-page
+    include ../components/global/header
+    //main
+    main
+      include ../pages/auth-page/add-wallet
+      include ../pages/auth-page/steps
+      include ../pages/index/tickets-sc
+    include ../components/global/footer
+    include ../components/modals/pages
+    include ../components/global/scripts

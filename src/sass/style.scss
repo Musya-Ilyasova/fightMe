@@ -2,7 +2,13 @@
 @import "global/libs/libs";
 @import "global/components/components";
 @import "../pug/pages/ui/_ui"; //remove before prod
+
+// index page
 @import "../pug/pages/index/_1-screen";
 @import "../pug/pages/index/_tickets-sc";
 @import "../pug/pages/index/_hero";
+
+// auth-page
+@import "../pug/pages/auth-page/_add-wallet";
+@import "../pug/pages/auth-page/_steps";
 
