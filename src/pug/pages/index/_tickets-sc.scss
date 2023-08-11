@@ -21,7 +21,7 @@
     }
     @include mq('1024') {
       clip-path: none;
-      background: url("../img/bg/tickets-sc-bg.svg") no-repeat;
+      background: url("../img/tickets-sc-path.svg") no-repeat;
       background-size: cover;
       height: calc(100% + 134px);
       top: -133px;

@@ -1,7 +1,9 @@
 //first-screen
 section.fr-screen
   .container.fr-screen__container
-    img.fr-screen__img(srcset="./img/first-sc2x.webp 2x" src="./img/first-sc.webp", alt="Invite your Friends and get rewards", loading="lazy", width="585", height="438", type="image/webp")
+    .fr-screen-img
+      +icon('first-sc-back')
+      img.fr-screen-img__prizes(src="./img/first-sc2x.webp", alt="Invite your Friends and get rewards", loading="lazy", width="585", height="438", type="image/webp")
     .fr-screen__content
       h1.fr-screen__title Invite your Friends and get rewards
       ul.list
@@ -18,11 +20,11 @@ section.fr-screen
             +icon("list-bg")
           span.list__text Get your slider!
       .btn__wrapper.fr-screen__btn
-        a.btn.btn_primary(href="https://discord.gg/fight-me-club")
-          +icon('btn-back')
-          +icon('btn-br')
-          +icon('btn-br-top')
-          +icon('btn-br-bottom')
+        a.btn.btn_primary.btn_320(href="https://discord.gg/fight-me-club")
+          +icon('btn-back-320')
+          +icon('btn-br-320')
+          +icon('btn-br-top-320')
+          +icon('btn-br-bottom-320')
           span.btn__text Log In via Discord
 
 

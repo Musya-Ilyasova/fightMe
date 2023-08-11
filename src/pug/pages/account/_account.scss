@@ -1,0 +1,178 @@
+.account-page {
+  background-color: $pink;
+  background-image: url(../img/bg/first-sc-account-bg2x-320.webp);
+  background-image: image-set(
+    url(../img/bg/first-sc-account-bg-320.webp) 1x type('image/webp'),
+    url(../img/bg/first-sc-account-bg2x-320.webp) 2x type('image/webp'));
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  @include mq('768') {
+    background-image: url(../img/bg/first-sc-account-bg2x-768.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-account-bg-768.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-account-bg2x-768.webp) 2x type('image/webp'));
+  }
+  @include mq('1024') {
+    background-image: url(../img/bg/first-sc-account-bg2x.webp);
+    background-image: image-set(
+      url(../img/bg/first-sc-account-bg.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-account-bg2x.webp) 2x type('image/webp'));
+  }
+}
+
+.getticket {
+  padding-top: 80px;
+  &-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 441px;
+    margin: 0 auto;
+    .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__prizes {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  &__text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .icon-ticket {
+    width: 16px;
+    height: 24px;
+  }
+  &__btn {
+    margin: 8px auto;
+  }
+}
+
+.prizes {
+  padding: 65px 0 16px;
+  .prizes__title {
+    margin-bottom: 7px
+  }
+}
+
+.getx3 {
+  padding: 16px 0 24px;
+
+}
+
+.personprizes {
+  padding: 16px 0 100px;
+  @include mq('768') {
+    padding: 28px 0 100px;
+  }
+  &__bannerinv {
+    margin: 0 auto;
+    @include mq('768') {
+      margin: 0 30px 0 0;
+    }
+  }
+  &__right {
+    padding-top: 48px;
+    color: white;
+    max-width: 320px;
+    margin: 0 auto;
+    @include mq('768') {
+      padding-top: 0px;
+      margin: 0;
+      max-width: none;
+      width: calc(100% - 30px - 320px);
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__container {
+    flex-direction: column;
+    @include mq('768') {
+      flex-direction: row;
+    }
+  }
+}
+
+
+.personprizes-counts {
+  display: flex;
+  margin: 20px 0 0;
+  @include mq('768') {
+    margin-bottom: 20px;
+  }
+  &__item {
+    margin-right: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 16px;
+    &:not(:last-child) {
+      border-right: 2px solid rgba(0, 0, 0, 0.24);
+    }
+    span {
+      font-family: $font-family-title;
+      font-size: 40px;
+      letter-spacing: -0.8px;
+      line-height: 1;
+      text-shadow: -4px 6px 0px rgba(0, 0, 0, 0.24);
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+}
+
+//personprizes-slider
+.personprizes {
+  .slider {
+    padding-top: 20px;
+    @include mq('920') {
+      padding: 19px 17px;
+    }
+
+    &__wrapper {
+      @include mq('768') {
+        margin: 20px 0;
+        background: url(../img/slider-bg-half.svg) no-repeat;
+        background-size: contain;
+      }
+    }
+    &__nav {
+      width: calc(100% + 30px);
+    }
+    &-item {
+      min-width: 196px;
+      max-width: 196px;
+      padding: 20px 16px;
+      &__img {
+        width: 72px;
+        height: 72px;
+      }
+      &__text {
+        font-family: $font-family-title;
+        font-size: 24px;
+      }
+      &__date {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.1;
+        position: relative;
+        z-index: 2;
+      }
+
+    }
+
+  }
+}
+
+

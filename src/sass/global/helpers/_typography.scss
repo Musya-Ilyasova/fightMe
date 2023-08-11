@@ -29,6 +29,12 @@ h3 {
   font-size: 32px;
 }
 
+.hidden {
+  visibility: hidden;
+  font-size: 0;
+
+}
+
 .link_learn {
   font-family: $font-family-title;
   font-size: 24px;

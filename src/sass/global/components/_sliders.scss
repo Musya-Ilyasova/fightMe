@@ -23,7 +23,6 @@
       height: 242px;
       overflow: visible;
       width: 100%;
-      // padding: 25px 20px;
     }
   }
   &__nav {
@@ -78,16 +77,14 @@
   }
 }
 .slider-item {
-  padding: 12px 15px;
+  padding: 24px 12px;
   min-width: 140px;
   max-width: 140px;
   box-sizing: border-box;
-  .icon-slider-item-bg {
+  .icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 140px;
-    height: 201px;
   }
   &__img {
     height: 110px;

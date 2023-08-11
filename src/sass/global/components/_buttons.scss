@@ -84,7 +84,7 @@
     transition: transform 0.15s ease-in-out;
     pointer-events: none;
   }
-  &:disabled {
+  &:disabled, &.disabled {
     opacity: 0.5;
     pointer-events: none;
   }

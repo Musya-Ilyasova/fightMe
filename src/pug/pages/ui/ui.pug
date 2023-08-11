@@ -23,19 +23,26 @@ section.buttons
         +icon('btn-br-bottom-320')
         span.btn__text How to get prize?
     .btn__wrapper
-      button.btn.btn_secondary(disabled)
-        +icon('btn-back')
-        +icon('btn-br')
-        +icon('btn-br-top')
-        +icon('btn-br-bottom')
-        span.btn__text Log In via Discord
-    .btn__wrapper
       button.btn.btn_primary.btn_230
         +icon('btn-back-230')
         +icon('btn-br-230')
         +icon('btn-br-top-230')
         +icon('btn-br-bottom-230')
         span.btn__text Cool!
+    .btn__wrapper
+      button.btn.btn_primary.btn_230
+        +icon('btn-back-230')
+        +icon('btn-br-230')
+        +icon('btn-br-top-230')
+        +icon('btn-br-bottom-230')
+        span.btn__text open a ticket
+    .btn__wrapper
+      button.btn.btn_primary.btn_230(disabled)
+        +icon('btn-back-230')
+        +icon('btn-br-230')
+        +icon('btn-br-top-230')
+        +icon('btn-br-bottom-230')
+        span.btn__text open a ticket
 section.modals
   .container
     h2 Popups
@@ -83,7 +90,7 @@ section.lists
           +icon("list-bg-blue")
         span.list__text Get your slider!
 section.sliders
-  .container.container-min
+  .container.container_min
     h2 Slider
     .slider__wrapper
       .slider__nav
@@ -131,7 +138,7 @@ section.sliders
           img.slider-item__img(srcset="./img/party2x.webp 2x" src="./img/party.webp", alt="Invitation to a party in honor of the release of the game", loading="lazy", width="113", height="52", type="image/webp")
           span.slider-item__text Invitation to a release party
 section.banners
-  .container.container-min
+  .container.container_min
     h2 Banners
     .bannerinv
       .bannerinv__container
@@ -171,17 +178,28 @@ section.banners
           li.bannerinv-socList__item
             a.bannerinv-socList__link(href="#") discord
               +icon("discordb")
-    .bunnertimer
-      .bunnertimer__timer
+    .bannertimer
+      .bannertimer__timer
         .timer
           span.hour 23
           | :
           span.min 59
           | :
           span.sec 32
-      .bunnertimer__container
-        h3.bunnertimer__title Get x3 tickets
-        p.bunnertimer__text for each friend you invite in next 24 hours you will get 3 tickets, not 1
+      .bannertimer__container
+        h3.bannertimer__title Get x3 tickets
+        p.bannertimer__text for each friend you invite in next 24 hours you will get 3 tickets, not 1
+    .bannerhowget
+      +icon("modal-back")
+      .bannerhowget__container
+        h3.bannerhowget__title How to get
+          br
+          | prize?
+        p.bannerhowget__text Write to our
+          a.bannerhowget__link(href="#") &nbsp;
+            span administrator Denis
+            span &nbsp;in Discord
+          | . He will ask for the wallet that you specified at the beginning. Within 3 days we will issue Alpha Fighter status to this wallet.
 section.inputs
   .container
     h2 Input

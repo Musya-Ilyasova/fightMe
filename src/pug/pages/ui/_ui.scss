@@ -35,8 +35,8 @@
 }
 
 .banners {
-  .bannerinv {
-    margin: 0 5px 20px 5px;
+  & > div > div{
+    margin-bottom: 20px;
   }
   .container {
     flex-wrap: wrap;

@@ -1,0 +1,44 @@
+section.personprizes
+  .container.container_min.personprizes__container
+    .bannerinv.personprizes__bannerinv
+      .bannerinv__container
+        h3.bannerinv__title INVITE FRIENDS TO GET MORE TICKETS
+        ul.list.list_blue.bannerinv__list
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text Share your personal link
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text Your friend fulfills conditions
+          li.list__item
+            span.list__count
+              +icon("list-bg-blue")
+            span.list__text You and your friend both get ticket
+        .bannerinv-link Your Fighter link
+          span.bannerinv-link__url#copy-content(data-text="fight.me/ref/ajai120") FIGHT.ME/REF/AJAI120
+          .btn__wrapper#copy-btn.bannerinv__btn
+            button.btn.btn_primary
+              +icon('btn-back')
+              +icon('btn-br')
+              +icon('btn-br-top')
+              +icon('btn-br-bottom')
+              span.btn__text Copy link
+        ul.bannerinv-socList
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") facebook
+              +icon("facebook")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") telegram
+              +icon("telegram")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") twitter
+              +icon("twitter")
+          li.bannerinv-socList__item
+            a.bannerinv-socList__link(href="#") discord
+              +icon("discordb")
+    .personprizes__right
+      h2.personprizes__title YOUR PRIZES
+      p.personprizes__text You don't have any prizes yet, open a gift ticket or invite friends
+
