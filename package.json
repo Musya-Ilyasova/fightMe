@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "keen-slider": "^6.8.6",
+    "lottie-web": "^5.12.2",
     "svg4everybody": "^2.1.9"
   }
 }

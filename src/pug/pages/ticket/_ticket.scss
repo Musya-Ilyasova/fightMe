@@ -2,6 +2,8 @@
   padding: 120px 0 80px;
   &__container {
     display: block;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
   }
   &__subtitle {
     font-size: 20px;
@@ -28,13 +30,14 @@
   margin-bottom: 40px;
   &__back {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: calc(50% - 228px);
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 685px;
     height: 456px;
+    padding-top: 65px;
+    animation: 7s linear 0s normal none infinite running rotate;
   }
   &__prize {
     margin: 0 auto;
@@ -43,5 +46,22 @@
     width: 180px;
     height: 180px;
     object-fit: contain;
+    animation: scale-2 4s linear 0s infinite alternate;
+  }
+}
+
+.ticket-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__video {
+    max-width: 100%;
+    width: 375px;
   }
 }

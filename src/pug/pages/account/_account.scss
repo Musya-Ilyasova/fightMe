@@ -68,15 +68,19 @@
   }
 }
 
-// .getx3 {
-//   padding: 16px 0 24px;
-//   max-height: 0;
-//   overflow: hidden;
-//   &.getx3 {
-//     max-height: 500px;
-//     transition-delay: 1s;
-//   }
-// }
+.getx3 {
+  padding: 16px 0 24px;
+  overflow: hidden;
+  &.hide {
+    padding: 0;
+    max-height: 0;
+    transition: 0.15s ease-in-out;
+    &.show {
+      max-height: 500px;
+      padding: 16px 0 24px;
+    }
+  }
+}
 
 .personprizes {
   padding: 16px 0 100px;
@@ -158,11 +162,7 @@
       }
     }
     &__nav {
-      width: calc(100% + 30px);
-      justify-content: flex-end;
-      @include mq('768') {
-        left: 0;
-      }
+      width: calc(100% + 60px);
     }
     &-item {
       min-width: 196px;

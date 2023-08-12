@@ -1,4 +1,7 @@
 section.ticket
+  .ticket-loading 
+    video.ticket-loading__video(autoplay muted)
+      source(src="video/loading-prize.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2') 
   .container.container_min.ticket__container
     .ticket-img
       img.ticket-img__back(src="./img/add-wallet-ticked-back.svg", alt="")
@@ -8,7 +11,7 @@ section.ticket
       br
       | Me merch
     .btn__wrapper.ticket__btn
-      button.btn.btn_primary.btn_230
+      a.btn.btn_primary.btn_230(href="account-with-prizes.html")
         +icon('btn-back-230')
         +icon('btn-br-230')
         +icon('btn-br-top-230')
