@@ -77,24 +77,34 @@
 
   &__back {
     position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
-    left: -75%;
+    top: calc(50% - 342px);
+    left: -93%;
     width: 685px;
-    height: 456px;
+    height: 685px;
+    padding-top: 65px;
+    object-fit: contain;
+    object-position: center;
     max-width: none;
+    animation: 7s linear 0s normal none infinite running rotate;
+    @include mq('375') {
+      left: -77%;
+    }
     @include mq('768') {
       left: -60%;
       right: 0;
       margin: 0 auto;
-      top: 50%;
+      top: calc(26% - 265px);
       width: 799px;
       height: 531px;
-
+      padding-top: 76px;
+    }
+    @include mq('1024') {
+      left: -53%;
     }
   }
   &__ticket {
     position: relative;
+    animation: scale-2 4s linear 0s infinite alternate;
     @include mq('768') {
       display: block;
       height: 141px;
@@ -112,5 +122,23 @@
       margin-top: 20px;
 
     }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-2 {
+  0% {
+    transform: scale(1);
+  }  
+  50% {
+    transform: scale(1.05);
   }
 }

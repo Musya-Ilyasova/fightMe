@@ -1,4 +1,4 @@
-const openModal = (modal, classOpen) => {
+export const openModal = (modal, classOpen) => {
   modal.classList.add(classOpen);
   document.body.style.overflow = "hidden";
 }
