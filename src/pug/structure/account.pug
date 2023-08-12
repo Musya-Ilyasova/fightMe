@@ -2,13 +2,12 @@ include ../mixins/mixins
 doctype html
 html(lang="ru")
   include ../components/global/head
-  body.account-page
+  body.account-page.account-page_start
     include ../components/global/header-account
     //main
     main
       include ../pages/account/getticket
       include ../pages/account/prizes
-      include ../pages/account/getx3
       include ../pages/account/personprizes-no-prizes
     include ../components/global/footer
     include ../components/modals/pages

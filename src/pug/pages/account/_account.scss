@@ -64,10 +64,15 @@
   }
 }
 
-.getx3 {
-  padding: 16px 0 24px;
-
-}
+// .getx3 {
+//   padding: 16px 0 24px;
+//   max-height: 0;
+//   overflow: hidden;
+//   &.getx3 {
+//     max-height: 500px;
+//     transition-delay: 1s;
+//   }
+// }
 
 .personprizes {
   padding: 16px 0 100px;
@@ -137,7 +142,7 @@
   .slider {
     padding-top: 20px;
     @include mq('920') {
-      padding: 19px 17px;
+      padding: 27px 17px;
     }
 
     &__wrapper {
@@ -145,10 +150,15 @@
         margin: 20px 0;
         background: url(../img/slider-bg-half.svg) no-repeat;
         background-size: contain;
+        height: 260px;
       }
     }
     &__nav {
       width: calc(100% + 30px);
+      justify-content: flex-end;
+      @include mq('768') {
+        left: 0;
+      }
     }
     &-item {
       min-width: 196px;
@@ -169,9 +179,7 @@
         position: relative;
         z-index: 2;
       }
-
     }
-
   }
 }
 
