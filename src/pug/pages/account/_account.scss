@@ -15,8 +15,6 @@
   }
   @include mq('1024') {
     background-image: url(../img/bg/first-sc-account-bg.webp);
-    background-image: image-set(
-      url(../img/bg/first-sc-account-bg.webp) 2x type('image/webp'));
   }
 }
 

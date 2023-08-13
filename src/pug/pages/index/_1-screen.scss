@@ -17,9 +17,6 @@
   }
   @include mq('1024') {
     background-image: url(../img/bg/first-sc-bg2x.webp);
-    background-image: image-set(
-      url(../img/bg/first-sc-bg.webp) 1x type('image/webp'),
-      url(../img/bg/first-sc-bg2x.webp) 2x type('image/webp'));
   }
   &__title {
     margin-top: 14px;

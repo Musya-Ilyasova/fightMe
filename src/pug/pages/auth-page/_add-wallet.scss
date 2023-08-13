@@ -21,9 +21,6 @@
   }
   @include mq('1024') {
     background-image: url(../img/bg/first-sc-input-bg2x.webp);
-    background-image: image-set(
-      url(../img/bg/first-sc-input-bg.webp) 1x type('image/webp'),
-      url(../img/bg/first-sc-input-bg2x.webp) 2x type('image/webp'));
   }
   &__img {
     width: 100%;

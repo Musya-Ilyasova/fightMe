@@ -60,9 +60,6 @@
     }
     @include mq('1024') {
       background-image: url(../img/bg/hero-sc-bg2x.webp);
-      background-image: image-set(
-        url(../img/bg/hero-sc-bg.webp) 1x type('image/webp'),
-        url(../img/bg/hero-sc-bg2x.webp) 2x type('image/webp'));
       background-position: top;
     }
   }
