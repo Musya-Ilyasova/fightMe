@@ -14,15 +14,15 @@
       url(../img/bg/first-sc-account-bg2x-768.webp) 2x type('image/webp'));
   }
   @include mq('1024') {
-    background-image: url(../img/bg/first-sc-account-bg2x.webp);
+    background-image: url(../img/bg/first-sc-account-bg.webp);
     background-image: image-set(
-      url(../img/bg/first-sc-account-bg.webp) 1x type('image/webp'),
-      url(../img/bg/first-sc-account-bg2x.webp) 2x type('image/webp'));
+      url(../img/bg/first-sc-account-bg.webp) 2x type('image/webp'));
   }
 }
 
 .getticket {
   padding-top: 80px;
+  overflow: hidden;
   &-img {
     position: relative;
     width: 100%;

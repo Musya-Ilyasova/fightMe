@@ -86,7 +86,7 @@
     object-position: center;
     max-width: none;
     animation: 7s linear 0s normal none infinite running rotate;
-    @include mq('375') {
+    @include mq('360') {
       left: -77%;
     }
     @include mq('768') {
