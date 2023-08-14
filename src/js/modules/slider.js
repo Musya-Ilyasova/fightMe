@@ -13,7 +13,7 @@ export const addSlider = () => {
         spacing: 12
       },
       range: {
-        max: 6,
+        max: 5,
         align: false
       }
     }
