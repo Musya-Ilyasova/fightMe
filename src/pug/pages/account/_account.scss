@@ -1,20 +1,25 @@
 .account-page {
   background-color: $pink;
-  background-image: url(../img/bg/first-sc-account-bg2x-320.webp);
-  background-image: image-set(
-    url(../img/bg/first-sc-account-bg-320.webp) 1x type('image/webp'),
-    url(../img/bg/first-sc-account-bg2x-320.webp) 2x type('image/webp'));
-  background-repeat: no-repeat;
-  background-size: 100% 100vh;
-  background-attachment: fixed;
-  @include mq('768') {
-    background-image: url(../img/bg/first-sc-account-bg2x-768.webp);
+  &::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/first-sc-account-bg2x-320.webp);
     background-image: image-set(
-      url(../img/bg/first-sc-account-bg-768.webp) 1x type('image/webp'),
-      url(../img/bg/first-sc-account-bg2x-768.webp) 2x type('image/webp'));
-  }
-  @include mq('1024') {
-    background-image: url(../img/bg/first-sc-account-bg.webp);
+      url(../img/bg/first-sc-account-bg-320.webp) 1x type('image/webp'),
+      url(../img/bg/first-sc-account-bg2x-320.webp) 2x type('image/webp'));
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    @include mq('768') {
+      background-image: url(../img/bg/first-sc-account-bg2x-768.webp);
+      background-image: image-set(
+        url(../img/bg/first-sc-account-bg-768.webp) 1x type('image/webp'),
+        url(../img/bg/first-sc-account-bg2x-768.webp) 2x type('image/webp'));
+    }
+    @include mq('1024') {
+      background-image: url(../img/bg/first-sc-account-bg.webp);
+    }
   }
 }
 
