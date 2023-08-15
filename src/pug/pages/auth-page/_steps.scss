@@ -28,21 +28,23 @@
     margin-bottom: 24px;
     @include mq('768') {
       margin-right: 30px;
-      width: 349px;
-    }
-    @include mq('1024') {
-      width: 380px;
+      width: 350px;
     }
   }
   &__list {
+    @include mq('768') {
+      max-width: 350px;
+    }
     .list__item {
       margin-bottom: 5px;
     }
   }
   &__container {
+    max-width: 375px;
     @include mq('768') {
       flex-wrap: nowrap;
       justify-content: center;
+      max-width: 822px;
     }
   }
 }

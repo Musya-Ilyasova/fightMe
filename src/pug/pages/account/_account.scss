@@ -57,6 +57,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    font-family: $font-family-title;
+    text-transform: uppercase;
   }
   .icon-ticket {
     width: 16px;
@@ -161,7 +163,7 @@
 
     &__wrapper {
       @include mq('768') {
-        margin: 20px 0;
+        margin: 20px 0 10px;
         background: url(../img/slider-bg-half.svg) no-repeat;
         background-size: contain;
         height: 260px;

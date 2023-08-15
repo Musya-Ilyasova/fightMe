@@ -1,10 +1,9 @@
 import modal from "./modules/modal"
 import { addSlider, addHalfSlider } from "./modules/slider";
 import copyClipboard from "./modules/copyClipboard";
-import inputAutoHeight from "./modules/inputAutoHeight";
 import showGetX3 from "./modules/showGetX3";
 import animationFireworks from "./modules/animation";
-import addDisableToBtn from "./modules/addDisableToBtn";
+import checkCountTickets from "./modules/checkCountTickets";
 import timer from "./modules/timer";
 import ticketLoadingVideo from './modules/ticketLoadingVideo';
 
@@ -22,9 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showGetX3();
       }
     }
-    addDisableToBtn();
-  } else if(document.body.classList.contains('auth-page') || document.body.classList.contains('ui')) {
-    inputAutoHeight();
+    checkCountTickets();
   } else if( document.body.classList.contains('account-page_ticket')) {
     ticketLoadingVideo();
   }

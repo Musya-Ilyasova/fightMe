@@ -1,6 +1,12 @@
 //add-wallet
 .auth-page {
   background: #090520;
+  .tickets-sc__container{
+    max-width: 375px;
+    @include mq('768') {
+      max-width: 768px;
+    }
+  }
 }
 .add-wallet {
   padding: 123px 0 120px;
@@ -35,7 +41,7 @@
     }
   }
   &__btn {
-    margin-top: 5px;
+    margin-top: 12px;
   }
   &__container {
     max-width: 375px;
@@ -74,29 +80,21 @@
 
   &__back {
     position: absolute;
-    top: calc(50% - 342px);
-    left: -93%;
-    width: 685px;
-    height: 685px;
-    padding-top: 65px;
+    top: calc(50% - 256px);
+    left: -45%;
+    width: 485px;
+    height: 485px;
     object-fit: contain;
     object-position: center;
     max-width: none;
     animation: 14s linear 0s normal none infinite running rotate;
-    @include mq('360') {
-      left: -77%;
-    }
     @include mq('768') {
-      left: -60%;
+      left: -23%;
       right: 0;
       margin: 0 auto;
       top: calc(26% - 265px);
-      width: 799px;
+      width: 531px;
       height: 531px;
-      padding-top: 76px;
-    }
-    @include mq('1024') {
-      left: -53%;
     }
   }
   &__ticket {

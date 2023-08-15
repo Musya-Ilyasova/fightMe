@@ -21,6 +21,7 @@
     }
     @include mq('1024') {
       height: 584px;
+      background-position: top 30% left 0;
     }
     @include mq('1600') {
       height: 900px;

@@ -13,7 +13,7 @@ export const addSlider = () => {
         spacing: 12
       },
       range: {
-        max: 5,
+        max: 4,
         align: false
       }
     }
@@ -30,7 +30,7 @@ export const addSlider = () => {
     slide === 0
       ? arrowLeft.classList.add("slider__arrow_disabled")
       : arrowLeft.classList.remove("slider__arrow_disabled")
-    slide === 4
+    slide === 1
       ? arrowRight.classList.add("slider__arrow_disabled")
       : arrowRight.classList.remove("slider__arrow_disabled")
   }
