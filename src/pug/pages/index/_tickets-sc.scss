@@ -43,7 +43,7 @@
     margin-bottom: 40px;
     width: 50%;
     @include mq('768') {
-      width: 33%;
+      width: 33.33%;
     }
     @include mq('1024') {
       width: 25%;
@@ -52,6 +52,7 @@
       margin-right: auto;
     }
     &_big {
+      width: 100%;
       @include mq('768') {
         width: 66%;
       }
@@ -59,14 +60,10 @@
         width: 50%;
       }
       .tickets-sc-list__img {
-        @include mq('768') {
-          width: 100%;
-        }
+        width: 100%;
       }
       .tickets-sc-list__name {
-        @include mq('768') {
-          max-width: 100%;
-        }
+        max-width: 100%;
       }
     }
   }
