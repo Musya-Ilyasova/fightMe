@@ -15,14 +15,7 @@ export const addSlider = () => {
       range: {
         max: 4,
         align: false
-      },
-      // breakpoints: {
-      //   '(min-width: 920px)': {
-      //     slides: {
-      //       perView: 5,
-      //     }
-      //   },
-      // },
+      }
     }
   )
   slider.on("optionsChanged", () => {

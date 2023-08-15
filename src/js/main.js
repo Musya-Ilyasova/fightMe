@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     animationFireworks();
     addSlider();
     copyClipboard();
-    if(!document.body.classList.contains('account-page_start')) {
+    if(!document.body.classList.contains('account-page_start') && !document.body.classList.contains('ui')) {
       addHalfSlider();
       timer('#bannerTimer');
       timer('#modalTimer');
