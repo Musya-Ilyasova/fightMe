@@ -82,7 +82,7 @@
     object-fit: contain;
     object-position: center;
     max-width: none;
-    animation: 7s linear 0s normal none infinite running rotate;
+    animation: 14s linear 0s normal none infinite running rotate;
     @include mq('360') {
       left: -77%;
     }
