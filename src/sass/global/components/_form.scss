@@ -25,23 +25,9 @@
   }
   &_error {
     color: $error;
-    & + .input__mgs {
+    & + .error__msg {
       opacity: 1;
       display: flex;
-    }
-  }
-  &__mgs {
-    opacity: 0;
-    color: $errorMsg;
-    font-size: 16px;
-    align-items: center;
-    padding: 5px 0;
-    display: none;
-    .icon {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
-      fill: $errorMsg;
     }
   }
   &__wrapper {
@@ -49,5 +35,18 @@
     max-width: 320px;
     width: 100%;
   }
-
+}
+.error__msg {
+  opacity: 0;
+  color: $errorMsg;
+  font-size: 16px;
+  align-items: center;
+  padding: 5px 0;
+  display: none;
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: $errorMsg;
+  }
 }

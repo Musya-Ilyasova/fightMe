@@ -9,7 +9,7 @@
   background-size: cover;
   overflow: hidden;
   @include mq('768') {
-    padding: 120px 0 160px;
+    padding: 120px 0 180px;
     background-image: url(../img/bg/first-sc-bg2x-768.webp);
     background-image: image-set(
       url(../img/bg/first-sc-bg-768.webp) 1x type('image/webp'),

@@ -29,6 +29,12 @@
     filter: drop-shadow(-5px 5px 0px rgba(0, 0, 0, 0.24));
     width: fit-content;
     height: auto;
+    .error__msg {
+      position: absolute;
+      top: calc(100% + 5px);
+      z-index: 1;
+    }
+    
   }
   &:after {
     content:"";
@@ -211,3 +217,7 @@
   }
 }
 
+.btn_error + .error__msg {
+  display: flex;
+  opacity: 1;
+}
