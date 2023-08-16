@@ -60,6 +60,9 @@ h3 {
   &:hover {
     color: lighten($color: $link, $amount: 15%)
   }
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .title {

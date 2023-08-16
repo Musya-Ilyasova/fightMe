@@ -81,7 +81,7 @@ a {
   color: inherit;
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px #e4f1fd7a;
+    box-shadow: none;
   }
   &:not([class]) {
     text-decoration-skip-ink: auto;

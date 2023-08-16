@@ -6,16 +6,8 @@
   width: 100%;
   z-index: 1000;
   &__container {
-    justify-content: center;
-  }
-  &_account {
-    .header__container {
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-  &__username {
-    color: $white
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -65,6 +57,5 @@
   .icon-user-back {
     fill: $black;
     z-index: 1;
-
   }
 }
