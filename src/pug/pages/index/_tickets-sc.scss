@@ -84,6 +84,7 @@
     display: block;
     @include mq("1024") {
       max-width: 175px;
+      letter-spacing: -0.38px;
     }
   }
 

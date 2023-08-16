@@ -27,13 +27,12 @@
   &__title {
     margin-bottom: 24px;
     @include mq('768') {
-      margin-right: 30px;
-      width: 350px;
+      width: 425px;
     }
   }
   &__list {
     @include mq('768') {
-      max-width: 350px;
+      width: calc(100% - 425px);
     }
     .list__item {
       margin-bottom: 5px;
