@@ -98,8 +98,7 @@
   color: white;
   padding: 16px 16px 32px 16px;
   position: relative;
-  background: url("../img/modal-timer-back.svg") no-repeat;
-  background-size: contain;
+  background: url("../img/modal-timer-back.svg") no-repeat;background-size: 100% 100%;
   @include mq('768') {
     width: 100%;
     background-image: url("../img/banner-timer-bg-tablet.svg");
@@ -160,7 +159,7 @@
       font-size: 40px;
       color: $violet;
       position: relative;
-      padding: 8px 12px 8px 8px;
+      padding: 8px 0px 8px 0px;
       clip-path: path("M0 11.2721L172 0.211914L169.163 54.1925L1.14626 60.2119L0 11.2721Z");
       width: 100%;
       height: 100%;

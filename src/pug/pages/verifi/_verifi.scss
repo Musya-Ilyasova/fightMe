@@ -1,28 +1,4 @@
 .verifi-page {
-  .tickets-sc {
-    @media screen and(max-width: 767px) {
-      background: none;
-    }
-    &:after {
-      @media screen and(max-width: 767px) {
-        background: transparent;
-      }
-    }
-    &__container {
-      @media screen and(max-width: 767px) {
-        max-width: 375px;
-      }
-    }
-  }
-}
-.verifi {
-  background-color: $pink;
-  padding: 118px 0 140px;
-  overflow: hidden;
-  @include mq('768') {
-    padding: 120px 0 185px;
-  }
-
   &::before {
     content: "";
     position: fixed;
@@ -46,6 +22,30 @@
     @include mq('1024') {
       background-image: url(../img/bg/first-sc-account-bg.webp);
     }
+  }
+  .tickets-sc {
+    @media screen and(max-width: 767px) {
+      background: none;
+      margin-top: 0px;
+    }
+    &:after {
+      @media screen and(max-width: 767px) {
+        background: transparent;
+      }
+    }
+    &__container {
+      @media screen and(max-width: 767px) {
+        max-width: 375px;
+      }
+    }
+  }
+}
+.verifi {
+  background-color: $pink;
+  padding: 118px 0 60px;
+  overflow: hidden;
+  @include mq('768') {
+    padding: 120px 0 185px;
   }
   &__bottom {
     position: relative;
