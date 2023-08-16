@@ -1,0 +1,41 @@
+section.verifi 
+  .container.verifi__container 
+    .verifi__top
+      .verifi__img.verifi-img
+        img.verifi-img__back(src="./img/add-wallet-ticket-back.svg", alt="")
+        img.verifi-img__ticket(src="./img/add-wallet-ticket2x.webp", alt="", width="163", height="135" type="image/webp")
+        span.title.verifi-img__title Your ticket is 
+          br 
+          | waiting for you
+    .verifi__bottom
+      span.subtitle.verifi__subtitle LAST STEP!
+      h1.verifi__title Join fight.me discord server and get verified
+    ul.verifi-steps
+      li.verifi-steps__item.verifi-steps__item_join
+        .verifi-steps__img 
+          img(src="./img/arm.webp", alt="")
+          +icon('discord')
+        p.verifi-steps__text Join to FightMe 
+          a.link(href="") Discord Server
+        +icon('verifi-arrow-top')
+      li.verifi-steps__item.verifi-steps__item_complete
+        .verifi-steps__img 
+          span Complete
+        p.verifi-steps__text Tap «Complete» button, and agree with the rules
+        +icon('verifi-arrow-bottom')
+      li.verifi-steps__item.verifi-steps__item_verify
+        .verifi-steps__img 
+          span # ✅ verify
+        p.verifi-steps__text Go to the «✅ verify» channel and complete the verification. That's it!
+    .btn__wrapper.verifi__btn
+      a.btn.btn_primary.btn_320.btn_error(href="https://discord.gg/fight-me-club")
+        +icon('btn-back-320')
+        +icon('btn-br-320')
+        +icon('btn-br-top-320')
+        +icon('btn-br-bottom-320')
+        span.btn__text DONE! GO NEXT
+      span.error__msg
+        +icon('warn')
+        | We didn't find your account on the server or you didn't pass verification, try again
+    
+    

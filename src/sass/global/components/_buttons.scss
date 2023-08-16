@@ -26,13 +26,14 @@
     box-shadow: none;
   }
   &__wrapper {
-    filter: drop-shadow(-5px 5px 0px rgba(0, 0, 0, 0.24));
     width: fit-content;
     height: auto;
+    position: relative;
     .error__msg {
       position: absolute;
       top: calc(100% + 5px);
       z-index: 1;
+      width: 295px
     }
     
   }

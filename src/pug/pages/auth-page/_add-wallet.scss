@@ -99,6 +99,7 @@
   }
   &__ticket {
     position: relative;
+    object-fit: contain;
     animation: scale-2 4s linear 0s infinite alternate;
     @include mq('768') {
       display: block;
@@ -115,7 +116,6 @@
       max-width: 349px;
       text-shadow: -1.3px 2.6px 0px rgba(0, 0, 0, 0.24);
       margin-top: 20px;
-
     }
   }
 }

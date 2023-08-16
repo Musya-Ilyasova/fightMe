@@ -10,6 +10,7 @@
     background-image: url("../img/bg/tickets-sc-path-tablet.svg");
     margin-top: -134px;
     padding-top: 134px;
+    background-position: right;
   }
   @include mq('1024') {
     background-image: url("../img/bg/tickets-sc-path.svg");

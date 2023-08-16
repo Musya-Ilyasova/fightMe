@@ -1,0 +1,15 @@
+include ../mixins/mixins
+doctype html
+html(lang="ru")
+  include ../components/global/head
+  body.verifi-page
+    include ../components/global/header-account
+    //main
+    main
+      include ../pages/verifi/verifi
+      include ../pages/index/tickets-sc
+    include ../components/global/footer
+    include ../components/modals/pages
+    include ../components/modals/modal
+    include ../components/modals/modalWithTimer
+    include ../components/global/scripts
