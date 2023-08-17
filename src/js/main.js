@@ -6,8 +6,11 @@ import animationFireworks from "./modules/animation";
 import checkCountTickets from "./modules/checkCountTickets";
 import timer from "./modules/timer";
 import ticketLoadingVideo from './modules/ticketLoadingVideo';
+import getScreenHaight from "./modules/getScreenHaight";
+
 
 document.addEventListener("DOMContentLoaded", function() {
+  getScreenHaight();
   if((document.body.classList.contains('account-page') && !document.body.classList.contains('account-page_ticket')) || document.body.classList.contains('ui')){
     modal();
     animationFireworks();

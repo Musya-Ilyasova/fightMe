@@ -85,6 +85,8 @@
       &-close {
         z-index: 1;
         padding: 22px 12px 22px 14px;
+        background: url(../img/icon-close-back.webp);
+        background-size: contain;
       }
     }
   }
@@ -96,11 +98,11 @@
 
   &_timer {
     width: 280px;
-    min-height: 208px;
+    height: 280px;
     color: white;
     padding: 16px 16px 32px 16px;
-    background: url("../img/modal-timer-back-1.svg") no-repeat;
-    background-size: 100% 100%;
+    background: url("../img/modal-timer-back.webp") no-repeat;
+    background-size: contain;
     .modal__title {
       color: white;
       text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.20);

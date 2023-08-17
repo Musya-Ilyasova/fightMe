@@ -98,8 +98,8 @@
   color: white;
   padding: 16px 16px 32px 16px;
   position: relative;
-  background: url("../img/modal-timer-back-1.svg") no-repeat;
-  background-size: 100% 100%;
+  background: url("../img/modal-timer-back.webp") no-repeat;
+  background-size: contain;
   @include mq('768') {
     width: 100%;
     background-image: url("../img/banner-timer-bg-tablet.svg");
