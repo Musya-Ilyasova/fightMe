@@ -1,4 +1,5 @@
 import KeenSlider from 'keen-slider';
+import { openModal } from "./modal";
 
 export const addSlider = () => {
   const arrowLeft = document.querySelector(".prizes .slider__left");
@@ -67,7 +68,7 @@ export const addHalfSlider = () => {
     halfSlider.on("slideChanged", () => {
       updateClasses()
     })
-  
+
     function updateClasses() {
       var slide = halfSlider.track.details.rel;
       slide === 0
@@ -80,6 +81,16 @@ export const addHalfSlider = () => {
     arrowLeft.addEventListener("click", () => halfSlider.prev());
     arrowRight.addEventListener("click", () => halfSlider.next());
   }
+}
+
+export const clickHalfSliderItem = () => {
+  const slide = document.querySelectorAll(".personprizes-slider .slider__item");
+  slide.forEach(item => {
+    item.addEventListener('click', () =>  {
+      const modal = document.querySelector('.modal__overlay[data-modal="1"]');
+      openModal(modal, 'open');
+    })
+  })
 }
 
 

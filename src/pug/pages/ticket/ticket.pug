@@ -1,14 +1,17 @@
 section.ticket
-  .ticket-loading 
-    video.ticket-loading__video(autoplay muted)
-      source(src="video/loading-prize.mov" type="video/mov")
-      source(src="video/loading-prize.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2') 
+  .ticket-loading
+    video.ticket-loading__video(autoplay muted width="375" height="375")
+      source(src="./video/loading-prize.ogv" type='video/ogg; codecs="theora, vorbis"')
+      source(src="./video/loading-prize.mov" type="video/mp4")
+      source(src="./video/loading-prize.webm" type='video/webm; codecs="vp9.0, opus"')
+      source(src="./video/loading-prize.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"')
+      | Your browser does not support the video tag.
   .container.container_min.ticket__container
-    .ticket-img 
+    .ticket-img
       img.ticket-img__back(src="./img/add-wallet-ticket-back.svg", alt="")
       img.ticket-img__prize(srcset="./img/characters-ticket2x.webp 2x" src="./img/characters-ticket.webp", alt="", type="image/webp")
     span.ticket__subtitle You have received
-    h1.ticket__title White List to 
+    h1.ticket__title White List to
       br
       | the NFT mint
     .btn__wrapper.ticket__btn

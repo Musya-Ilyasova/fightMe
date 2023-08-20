@@ -177,6 +177,7 @@
       min-width: 196px;
       max-width: 196px;
       padding: 20px 16px;
+      cursor: pointer;
       &__img {
         width: 72px;
         height: 72px;
@@ -195,7 +196,7 @@
       }
       .icon {
         max-width: 100%;
-      } 
+      }
     }
   }
 }
@@ -215,7 +216,7 @@
 @keyframes scale-3 {
   0% {
     transform: scale(1);
-  }  
+  }
   50% {
     transform: scale(1.05);
   }

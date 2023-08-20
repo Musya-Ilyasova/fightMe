@@ -1,5 +1,5 @@
 import modal from "./modules/modal"
-import { addSlider, addHalfSlider } from "./modules/slider";
+import { addSlider, addHalfSlider, clickHalfSliderItem } from "./modules/slider";
 import copyClipboard from "./modules/copyClipboard";
 import showGetX3 from "./modules/showGetX3";
 import animationFireworks from "./modules/animation";
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     copyClipboard();
     if(!document.body.classList.contains('account-page_start') && !document.body.classList.contains('ui')) {
       addHalfSlider();
+      clickHalfSliderItem();
       timer('#bannerTimer');
       timer('#modalTimer');
       if(document.querySelectorAll('.personprizes-slider .slider-item').length === 1) {
