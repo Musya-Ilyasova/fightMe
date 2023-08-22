@@ -158,11 +158,16 @@
 .personprizes {
   .slider {
     padding-top: 20px;
+    height: 100%;
     @include mq('920') {
       padding: 27px 17px;
     }
-
     &__wrapper {
+      opacity: 0;
+      opacity: 1;
+      &.show {
+        opacity: 1;
+      }
       @include mq('768') {
         margin: 20px 0 10px;
         background: url(../img/slider-bg-half.svg) no-repeat;
@@ -178,6 +183,12 @@
       max-width: 196px;
       padding: 20px 16px;
       cursor: pointer;
+      background: url('../img/slider-item-bg-half.svg') no-repeat;
+      background-size: contain;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
       &__img {
         width: 72px;
         height: 72px;
@@ -186,6 +197,9 @@
         font-family: $font-family-title;
         font-size: 24px;
         max-width: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 0;
       }
       &__date {
         font-size: 12px;
@@ -193,6 +207,8 @@
         line-height: 1.1;
         position: relative;
         z-index: 2;
+        display: block;
+        margin-top: auto;
       }
       .icon {
         max-width: 100%;
